@@ -45,7 +45,9 @@ class UserComment:
                 cls._ASCII_PREFIX: cls.ASCII, cls._JIS_PREFIX: cls._JIS, cls._UNICODE_PREFIX: cls._UNICODE,
             }[prefix]
         except KeyError:
-            raise ValueError('unable to determine appropriate encoding')
+            #try to decode the entire data string, using ascii
+            body=data
+            encoding=cls.ASCII
         return body.decode(encoding, errors='replace')
 
     @classmethod
