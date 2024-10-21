@@ -260,7 +260,7 @@ TAGS = {
              41493: {'name': 'ExposureIndex', 'type': TYPES.Rational},
              41495: {'name': 'SensingMethod', 'type': TYPES.Short},
              41728: {'name': 'FileSource', 'type': TYPES.Undefined},
-             41729: {'name': 'SceneType', 'type': TYPES.Undefined},
+             41729: {'name': 'SceneType', 'type': TYPES.Short},
              41730: {'name': 'CFAPattern', 'type': TYPES.Undefined},
              41985: {'name': 'CustomRendered', 'type': TYPES.Short},
              41986: {'name': 'ExposureMode', 'type': TYPES.Short},
